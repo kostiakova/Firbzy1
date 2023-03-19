@@ -1,0 +1,126 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <style>
+.transition {transition: 3s;}
+.div-items{float: left;
+    transition-duration: 0.3s;}
+.div-items:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);}
+.items{border:1px solid black;
+    border-radius: 20px;
+    margin: 10px;
+    margin-left: 0px;
+    height: 150px;
+    width:100%;
+    box-shadow: 0px 5px 10px #53ea93;
+    background: radial-gradient(white, #FFb911, black 95%)}
+.items input{height: 100px;
+    margin: 25px;}
+items a{width:150px;
+    background-color: black;}
+.Main-Title{margin: 15px;
+    color: #53ea93;
+    margin-top: 30px;
+    width: 90%;
+    transition-duration: 1s;}
+.Main-Title:hover{color: black;}
+.aaa1{width: 290px;
+    height: 40px;
+    box-shadow: 0px 5px 10px #53ea93;
+    background-color: black;
+    border-radius: 20px;
+    transition-duration: 1s;
+    transition-property: all;}
+.aaa1:hover{color: red;
+    background-color: #53ea93;
+    box-shadow: inset 0 0 0 3px #53ea93;}
+div input{height:30px;
+    margin:30px;
+    margin-top:10px;
+    border-radius:30px;
+    padding:10px;
+    background: radial-gradient(lightyellow, powderblue);}
+.parent{margin: 10px 0px;
+    width: 100%;}
+.menu{border:1px solid black;
+    width: 100%;
+    border-radius: 20px;
+    margin: 0px;
+    margin-left: 0px;
+    box-shadow: 0px 5px 10px #53ea93;}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    background-color: AAAAAA;}
+li {float: left;
+    top: 0;}
+li a {
+    display: block;
+    color: #8ECAD4;
+    text-align: center;
+    padding: 8px 10px;
+    text-decoration: none;}
+li a:hover {
+    background-color: #53ea93;
+    color: white;}
+.butback:hover{height: 20px;
+    background-color: #53ea93;
+    color: white;}
+.butback{border-radius:20px;
+    height: 20px;
+    margin:0px;
+    padding: 5px;
+    margin-left:5px;
+    margin-top:2.5px;
+    transition-duration: 0.3s;}
+body{margin-left:10px;
+    margin-top: 8px;
+    margin-right:10px;}
+body{
+    background-image: url({% static 'mainpage/images/green-back.png' %});
+    background-size: cover;
+    }
+.items-div{margin: 0px;}
+.link{transition-duration: 0.3s;
+    border-radius:50px;}
+.link_current{
+    transition-duration: 0.3s;
+    border-radius:50px;
+    background-color: #3EB36F;
+    color: #daffdd;}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="{% static 'mainpage/images/favicon.ico' %}">
+    <title>Firbzy - the Shop</title>
+</head>
+<body>
+<div class="parent">
+<nav class="menu">
+  <ul class="ull">
+    <li><a class="butback"><img width="20" src="{% static 'mainpage/images/favicon.ico' %}"></a></li>
+    <li><a class="link_current">Главная</a></li>
+    <li><a class="link" href="/about_us">О нас</a></li>
+    <li><a class="link" href="/contact_us">Контакты</a></li>
+  </ul>
+</nav>
+</div>
+<div class="aaa1">
+<h1 class="Main-Title">Welcome to Firbzy</h1>
+</div>
+<div class="items">
+<div class="div-items"><a href="/about_us" class="menu-actions"><input class="items-div" type="button" value="О нас!"></a></div>
+<div class="div-items"><a href="/itemspage" class="menu-actions"><input class="items-div" type="button" value="Перейти к магазину!"></a></div>
+</div>
+</body>
+</html>

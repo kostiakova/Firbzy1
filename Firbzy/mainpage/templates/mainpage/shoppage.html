@@ -1,0 +1,71 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <style>
+h1{color: red;}
+.card-table{
+    display: flex;}
+.menu_items{
+    width: 150px;
+    height: 80px;
+    border: 3px solid cyan;
+    border-radius: 30px;
+    margin: 12px;}
+.button{
+    margin: 0 auto;
+    margin-top: 5 ;
+    display: block;}
+.text-name-item{
+    margin: 8px;
+    font-size: 0.8rem;}
+.bodyyy{margin: 20px;}
+body{border-radius:20px;
+    border: 3px solid red;}
+body{background-image: url({% static 'mainpage/images/green-back.png' %});
+    background-size: cover;}
+.backbtn:hover{background-color: radial-gradient(at top, #FEFFFF, #A7CECC);
+    color: white;}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="{% static 'mainpage/images/favicon.ico' %}">
+    <title>The Shop</title>
+</head>
+<body>
+<div class="bodyyy">
+<a href="/" class="backbtn"><img width="50" src="{% static 'mainpage/images/back-white.png' %}"></a>    <!--image "BACK"-->
+<h1 class="LabelTheShop">The Shopspace</h1>
+<div class="card-table">
+    <div class="menu_items"><a href="/item1"><input class="button" type="button" value="Первый обьект" height="56">
+        <p align="center" class="text-name-item">Text</p></a>
+    </div>
+    <div class="menu_items"><a href="/item2"><input class="button" type="button" value="Второй обьект" height="56">
+        <p align="center" class="text-name-item">Text</p></a>
+    </div>
+    <div class="menu_items"><a href="/item3"><input class="button" type="button" value="Третий обьект" height="56">
+        <p align="center" class="text-name-item">Text</p></a>
+    </div>
+    <div class="menu_items"><a href="/item4"><input class="button" type="button" value="Четвертый обьект" height="56">
+        <p align="center" class="text-name-item">Text</p></a>
+    </div>
+</div>
+<div class="card-table">
+    <div class="menu_items"><a href="/item1"><input class="button" type="button" value="Первый обьект" height="56">
+        <p align="center" class="text-name-item">Text</p></a>
+    </div>
+    <div class="menu_items"><a href="/item2"><input class="button" type="button" value="Второй обьект" height="56">
+        <p align="center" class="text-name-item">Text</p></a>
+    </div>
+    <div class="menu_items"><a href="/item3"><input class="button" type="button" value="Третий обьект" height="56">
+        <p align="center" class="text-name-item">Text</p></a>
+    </div>
+    <div class="menu_items"><a href="/item4"><input class="button" type="button" value="Четвертый обьект" height="56">
+        <p align="center" class="text-name-item">Text</p></a>
+    </div>
+</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+.menuff{border:1px solid blue;
+    border-radius: 20px;
+    margin-top: 0px;
+    margin: 10px;
+    margin-left: 0px;
+}
+.ull{margin:5px;
+    padding-left: 0px;}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    background-color: AAAAAA;}
+li {float: left;
+    top: 0;}
+li a {    transition-duration: 3s;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 8px 6px;
+    text-decoration: none;}
+li a:hover {background-color: #53EA93;
+    color: black;}
+.but1{display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 2.1rem;
+    position: relative;
+    width:210px;
+    height:210px;
+    background-color: white;
+    border: 1px solid #585959;
+    border-radius: 20px;
+    box-shadow: -10px 5px 10px gray;
+    top: 0;
+    transition: top ease 0.5s;}margin-left: 10px;
+.but:hover{top: -50px;}
+.butback{border-radius:20px;
+    margin:0px;
+    padding: 5px;
+    margin-left:5px;
+    margin-top:0px;
+    border:}
+body{
+    border: 2px solid black;
+    margin-left: 5px;
+    border-radius: 20px;}
+.parent{margin-left: 10px;}
+footer{background-color: black;}
+/////////contact_us
+body{background: radial-gradient(at top, #FEFFFF, #A7CECC);}
+.bar{background: linear-gradient()}
+/////////
+
+/////////shoppage
+.card-table{
+    display: flex;}
+.menu_items{
+    width: 150px;
+    height: 50px;
+    border: 3px solid;
+    margin: 2px;}
+.button{
+    margin: 0 auto;
+    display: block;}
+.text-name-item{
+    margin: 8px;
+    font-size: 0.8rem;}
+/////////
